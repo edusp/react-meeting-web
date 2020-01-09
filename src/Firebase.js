@@ -3,15 +3,15 @@ import 'firebase/database'
 import 'firebase/auth'
 
 
-const firebaseConfig = {
-    apiKey: "AIzaSyDbqi43d0JKBtcuDjVzjj8mQy7ZLdgS3eA",
-    authDomain: "react-app-fbdb.firebaseapp.com",
-    databaseURL: "https://react-app-fbdb.firebaseio.com",
-    projectId: "react-app-fbdb",
-    storageBucket: "react-app-fbdb.appspot.com",
-    messagingSenderId: "671644451363",
-    appId: "1:671644451363:web:cc6ce39afd4e93e7176796"
-  };
+var firebaseConfig = {
+  apiKey: "AIzaSyBKzX4NySMINtpoqAe4v81t34Gj-abhuGo",
+  authDomain: "meeting-react-app.firebaseapp.com",
+  databaseURL: "https://meeting-react-app.firebaseio.com",
+  projectId: "meeting-react-app",
+  storageBucket: "meeting-react-app.appspot.com",
+  messagingSenderId: "272771970019",
+  appId: "1:272771970019:web:a82186892cea00f12d26d6"
+};
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
