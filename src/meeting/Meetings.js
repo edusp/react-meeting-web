@@ -29,6 +29,7 @@ class Meetings extends Component {
       this.setState({errorMessage: 'Meeting name can\'t be empt'});
       return;
     } else {
+      this.setState({errorMessage: null});
       this.props.addMeeting({meetingName: this.state.meetingName});
       this.setState({meetingName: ''});
     }
