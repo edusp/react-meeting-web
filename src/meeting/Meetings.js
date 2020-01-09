@@ -19,11 +19,7 @@ class Meetings extends Component {
   handleChange(e) {
     const itemName = e.target.name;
     const itemValue = e.target.value;
-    console.log({[itemName]: itemValue});
     this.setState({[itemName]: itemValue});
-    
-    
-    
   }
 
   handleSubmit(e) {
@@ -31,10 +27,11 @@ class Meetings extends Component {
 
     if(this.state.meetingName === '') {
       this.setState({errorMessage: 'Meeting name can\'t be empt'});
+      return;
+    } else {
+      this.props.addMeeting({meetingName: this.state.meetingName});
+      this.setState({meetingName: ''});
     }
-
-    //this.props.addMeeting({meetingName: this.state.meetingName});
-    //this.setState({meetingName: ''});
   }
 
   render() {
