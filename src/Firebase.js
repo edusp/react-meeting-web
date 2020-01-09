@@ -3,7 +3,7 @@ import 'firebase/database'
 import 'firebase/auth'
 
 
-var firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyBKzX4NySMINtpoqAe4v81t34Gj-abhuGo",
   authDomain: "meeting-react-app.firebaseapp.com",
   databaseURL: "https://meeting-react-app.firebaseio.com",
