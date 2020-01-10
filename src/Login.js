@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { navigate } from '@reach/router';
-import firebase from './Firebase';
+import firebase from './configuration/Firebase';
 
 import FormError  from './FormError';
 

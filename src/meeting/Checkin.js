@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 import { navigate } from '@reach/router';
-import firebase from './Firebase';
+import firebase from '../configuration/Firebase';
 
 class Checkin extends Component {
 
   constructor(props) {
     super(props);
+
     this.state = {
       displayName: '',
-      email: null
+      email: ''
     }
 
     this.handleChange = this.handleChange.bind(this);
@@ -25,7 +26,7 @@ class Checkin extends Component {
     e.preventDefault();
     
     const ref = firebase.database()
-    .ref(`meetings/${this.props.userId}/${this.props.meetingId}/atendees`);
+    .ref(`meetings/${this.props.userId}/${this.props.meetingId}/attendees`);
 
     ref.push({
       attendeeName: this.state.displayName,
@@ -34,8 +35,6 @@ class Checkin extends Component {
 
     navigate(`/attendees/${this.props.userId}/${this.props.meetingId}`);
 
-
-    
   }
 
   render() {

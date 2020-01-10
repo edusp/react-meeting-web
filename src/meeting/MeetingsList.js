@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import firebase from '../Firebase';
+import firebase from '../configuration/Firebase';
 import {GoTrashcan} from 'react-icons/go';
 import { navigate } from '@reach/router';
 import { FaLink } from 'react-icons/fa';
