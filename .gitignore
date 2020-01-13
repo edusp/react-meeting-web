@@ -4,6 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
+/package-lock.json
+package-lock.json
 
 # testing
 /coverage
@@ -24,3 +26,5 @@ yarn-error.log*
 
 #config file
 #/src/configuration/config.js
+
+
